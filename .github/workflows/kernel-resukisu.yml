@@ -14,7 +14,7 @@ on:
       vivo_tarball_url:
         description: "VKI 时 tarball 直链（在线拉取）"
         type: string
-        default: "https://media.githubusercontent.com/media/morannlx/vivo-GKI/refs/heads/dev/vivo/android_16.0_kernel_MT6989.tar.gz"
+        default: "https://opensource.vivo.com/oss/uploader/download?token=eyJhbGciOiJIUzUxMiJ9.eyJeeXEwTkxpTllTeXlYTFZYREVUVDYwcDJaJUNaS3d3ViI6ImhjZXpiOCIsInN1YiI6Ijc0ODc3ODA3OTc2NDU5NTkyIiwiZXhwIjoxNzczMTI4NDg0LCJpYXQiOjE3NzMxMjc4ODR9.5dfhJf74xoNDu4TVhCw5QVdEEjvBBES3XBJKezwI1UXR2cM5yokEfzoe5ntCS7I_WvUAoPeqoKxVmI-z6M5ZeA&appNamevos"
       android_version:
         type: string
         default: "android14"
