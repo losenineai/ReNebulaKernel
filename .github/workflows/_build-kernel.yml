@@ -189,7 +189,7 @@ jobs:
         working-directory: ${{ env.KERNEL_ROOT }}
         run: |
           rm -rf common && mkdir -p common
-          curl -sL "${{ inputs.vivo_tarball_url }}" -o tmp.tar.gz | tar -xzf tmp.tar.gz   -C common --strip-components=0
+          curl -sL "https://opensource.vivo.com/oss/uploader/download?token=eyJhbGciOiJIUzUxMiJ9.eyJeeXEwTkxpTllTeXlYTFZYREVUVDYwcDJaJUNaS3d3ViI6ImhjZXpiOCIsInN1YiI6Ijc0ODc3ODA3OTc2NDU5NTkyIiwiZXhwIjoxNzczMTI4NDg0LCJpYXQiOjE3NzMxMjc4ODR9.5dfhJf74xoNDu4TVhCw5QVdEEjvBBES3XBJKezwI1UXR2cM5yokEfzoe5ntCS7I_WvUAoPeqoKxVmI-z6M5ZeA&appNamevos" -o tmp.tar.gz | tar -xzf tmp.tar.gz   -C common --strip-components=0
           [ -f common/Kconfig ] && sed -i 's|^source "kernel/vivo_rsc/Kconfig"|# source "kernel/vivo_rsc/Kconfig"  # 已移除|' common/Kconfig || true
           [ -f common/kernel/Makefile ] && sed -i 's|^obj-\$(CONFIG_VIVO_RSC) += vivo_rsc/|# &  # 已移除|' common/kernel/Makefile || true
 
